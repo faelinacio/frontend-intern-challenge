@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" href="project.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../Assets/urls.json"></script>
+		<script type="text/javascript" src="project.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<img id="logoChaordic" src="../Assets/logo-chaordic.png">
+		</header>
+		<div id="shortenArea">
+			<h1 id="title">Encurte seus links.</h1>
+			<h4 id="subheading">Links são longos. Encurte os links que você deseja compartilhar,<br>
+			e acompanhe enquanto viajam através da internet.</h4>
+			<input id="inputLink" placeholder="Cole seu link aqui" type="text">
+			<label id="delete"></label>
+			<button id="shorten">ENCURTAR</button>
+		</div>
+		<div id="top5Area">
+			<h2 class="areaTitle">Top 5</h2>
+			<div id="top5"></div>
+		</div>
+		<div id="hitsArea">
+			<h2 class="areaTitle">HITS</h2>
+			<p id="totalHits"></p>
+			<label id="textHits">Cliques em links</label>
+		</div>
+		<footer class="row">
+			<div id="chrdc">
+				<label class="footerContent">chr.dc</label>
+			</div>
+			<div id="socialMedia">
+				<img class="footerContent" src="../Assets/icon-facebook.png">
+				<img class="footerContent" src="../Assets/icon-twitter.png">
+			</div>
+		</footer>
+	</body>
+</html>
