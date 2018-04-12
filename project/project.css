@@ -1,0 +1,181 @@
+body, html {
+	font-family: Roboto Slab;
+}
+
+footer {
+	width: 100%;
+	color: #AA1423;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 1em;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 2.5em;
+ 	text-align: center;
+ 	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+hr {
+	width: 31em;;
+}
+
+img {
+	max-width: 100%;
+}
+
+.areaTitle {
+	color: #AA1423;
+	font-weight: 300;
+	font-size: 3em;
+}
+
+.footerContent {
+	width: 1.7em;
+	height: 1.7em;
+	margin-left: 3em;
+	font-family: Roboto;
+
+}
+
+.top5hits {
+	color: #777;
+	text-align: center;
+	font-size: 1em;
+}
+
+
+.top5url {
+	color: #AA1423;
+	text-align:justify;
+	font-size: 1em;
+	padding-right: 20em;
+	width: 25%;
+}
+
+#chrdc {
+	padding-left: 8em;
+	float: left;
+}
+
+#delete {
+	border-bottom: 2px;
+	border-color: #FD6E12;
+	font-size: 1.3em;
+}
+
+#hitsArea {
+	padding: 5em;
+	text-align: center;
+	background-image: url("../Assets/background-grey.jpg");
+	background-position: top;
+	height: 15em;
+}
+
+#inputLink {
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #FD6E12;
+	margin-top: 4em;
+	width: 22em;;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: #FD6E12;
+	background-color: transparent;
+	font-family: Roboto;
+}
+
+#logoChaordic {
+	height: 2.2em;
+	width: 8.5em;
+}
+
+#shorten {
+	color: #FFF;
+	background-color: #FD6E12;
+	vertical-align: bottom;
+	height: 2.4em;
+	width: 6.8em;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	font-family: Roboto;
+	font-size: 1.3em;
+	font-weight: 800;
+}
+
+#shortenArea {
+	padding: 10em;
+	color: #FFF;
+	text-align: center;
+	background-image: url("../Assets/background-home.jpg");
+	height: 25em;
+	background-size: cover;
+}
+
+#socialMedia {
+	padding-right: 12em;
+	float: right;
+}
+
+#subheading {
+	line-height: 1.5em;
+	font-size: 1.4em;
+	font-weight: 200;
+	font-family: Roboto;
+}
+
+#textHits {
+	font-size: 1.2em;
+	color: #777;
+	font-family: Roboto;
+}
+
+#title {
+	font-size: 3.2em;
+	font-weight: 700;
+}
+
+#top5 {
+	padding: 2em;
+}
+
+#top5Area {
+	line-height: 2em;
+	padding-top: 3em;
+	text-align: center;
+	height: 32em;
+}
+
+#totalHits {
+	color: #AA1423;
+	font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	width: 5em;
+	height: 1.6em;
+	border-radius: 5%;
+}
+
+:-moz-placeholder {
+	font-weight: 300;
+	color: #FD6E12;
+}
+::-moz-placeholder {
+	font-weight: 300;
+	color: #FD6E12;
+}
+:-ms-input-placeholder {
+	font-weight: 300;
+	color: #FD6E12;
+}
+::-webkit-input-placeholder {
+	font-weight: 300;
+	color: #FD6E12;
+}
