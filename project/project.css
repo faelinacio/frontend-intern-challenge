@@ -1,26 +1,17 @@
-body, html {
-	font-family: Roboto Slab;
-}
-
 footer {
-	width: 100%;
 	color: #AA1423;
-	font-size: 1.5em;
 	text-align: center;
-	margin: 1em;
+	height: 2.5em;
+	width: 100%;
+	margin: 2em;
 }
 
 header {
-	position: relative;
+	text-align: center;
 	width: 100%;
 	height: 2.5em;
- 	text-align: center;
- 	margin-top: 0.8em;
+	margin-top: 0.8em;
 	margin-bottom: 0.8em;
-}
-
-hr {
-	width: 31em;;
 }
 
 img {
@@ -29,153 +20,171 @@ img {
 
 .areaTitle {
 	color: #AA1423;
-	font-weight: 300;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
 	font-size: 3em;
-}
-
-.footerContent {
-	width: 1.7em;
-	height: 1.7em;
-	margin-left: 3em;
-	font-family: Roboto;
-
-}
-
-.top5hits {
-	color: #777;
 	text-align: center;
-	font-size: 1em;
 }
 
+.top5HitsTab {
+	color: #777;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	display: inline;
+	float: right;
+}
 
-.top5url {
+.top5UrlsTab {
+	font-size: 1.5em;
+	display: inline;
+}
+
+.top5Urls {
 	color: #AA1423;
-	text-align:justify;
-	font-size: 1em;
-	padding-right: 20em;
-	width: 25%;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+.top5Tr {
+	border-bottom: 1px solid #EEE;
 }
 
 #chrdc {
-	padding-left: 8em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	padding-left: 10%;
+	vertical-align: middle;
 	float: left;
 }
 
 #delete {
-	border-bottom: 2px;
-	border-color: #FD6E12;
 	font-size: 1.3em;
+	cursor: pointer;
+}
+
+#facebook {
+	margin-left: 2em;
 }
 
 #hitsArea {
-	padding: 5em;
-	text-align: center;
 	background-image: url("../Assets/background-grey.jpg");
 	background-position: top;
 	height: 15em;
+	padding: 5em;
 }
 
 #inputLink {
+	color: #FD6E12;
 	font-size: 1.4em;
 	font-weight: 700;
-	color: #FD6E12;
+	font-family: 'Roboto', sans-serif;
+	background-color: transparent;
+	width: 35%;
 	margin-top: 4em;
-	width: 22em;;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-color: #FD6E12;
-	background-color: transparent;
-	font-family: Roboto;
+}
+
+#inputLink:-moz-placeholder {
+	color: #FD6E12;
+	font-weight: 300;
+}
+#inputLink::-moz-placeholder {
+	color: #FD6E12;
+	font-weight: 300;
+}
+#inputLink:-ms-input-placeholder {
+	color: #FD6E12;
+	font-weight: 300;
+}
+#inputLink::-webkit-input-placeholder {
+	color: #FD6E12;
+	font-weight: 300;
 }
 
 #logoChaordic {
-	height: 2.2em;
-	width: 8.5em;
+	padding-top: 0.5em;
+	cursor: pointer;
 }
 
 #shorten {
 	color: #FFF;
-	background-color: #FD6E12;
-	vertical-align: bottom;
-	height: 2.4em;
-	width: 6.8em;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.3em;
 	font-weight: 800;
+	vertical-align: bottom;
+	background-color: #FD6E12;
+	height: 2.5em;
+	width: 6.8em;
+	margin-left: 0.5em;
+	border: none;
+	cursor: pointer;
 }
 
 #shortenArea {
-	padding: 10em;
 	color: #FFF;
 	text-align: center;
 	background-image: url("../Assets/background-home.jpg");
-	height: 25em;
 	background-size: cover;
+	height: 25em;
+	padding: 10em;
 }
 
 #socialMedia {
-	padding-right: 12em;
+	vertical-align: middle;
+	padding-right: 12%;
 	float: right;
 }
 
 #subheading {
-	line-height: 1.5em;
 	font-size: 1.4em;
 	font-weight: 200;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5em;
 }
 
 #textHits {
-	font-size: 1.2em;
 	color: #777;
+	font-size: 1.2em;
 	font-family: Roboto;
+	text-align: center;
 }
 
 #title {
+	font-family: 'Roboto Slab', serif;
 	font-size: 3.2em;
 	font-weight: 700;
 }
 
 #top5 {
-	padding: 2em;
+	font-family: 'Roboto Slab', serif;
+	margin: auto;
+	border-collapse: collapse;
+	width: 40em;
 }
 
 #top5Area {
-	line-height: 2em;
-	padding-top: 3em;
-	text-align: center;
+	line-height: 2.8em;
 	height: 32em;
+	padding-top: 3em;
 }
 
 #totalHits {
+	font-family: 'Roboto', sans-serif;
 	color: #AA1423;
 	font-size: 2em;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 0.3em;
 	background-color: #FFF;
 	width: 5em;
-	height: 1.6em;
+	height: 1.5em;
 	border-radius: 5%;
 }
 
-:-moz-placeholder {
-	font-weight: 300;
-	color: #FD6E12;
-}
-::-moz-placeholder {
-	font-weight: 300;
-	color: #FD6E12;
-}
-:-ms-input-placeholder {
-	font-weight: 300;
-	color: #FD6E12;
-}
-::-webkit-input-placeholder {
-	font-weight: 300;
-	color: #FD6E12;
+#twitter {
+	cursor: pointer;
 }

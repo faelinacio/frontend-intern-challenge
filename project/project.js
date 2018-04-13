@@ -7,7 +7,7 @@ $(function() {
 			alert("O link a ser encurtado não foi informado");
 			return;
 		}
-        var textButton = $("#shorten").text();
+		var textButton = $("#shorten").text();
 		if (textButton == "ENCURTAR") {
 			shortenLink();
 		} else {
@@ -16,14 +16,28 @@ $(function() {
 	});
 
 	$("#delete").click( function() {
-        deleteURL();
+		deleteURL();
 	});
+
+	$("#logoChaordic").click( function() {
+		window.open("https://www.chaordic.com.br/");
+	});
+
+	$("#facebook").click( function() {
+		window.open("https://www.facebook.com/chaordic.com.br/");
+	});
+
+	$("#twitter").click( function() {
+		window.open("https://twitter.com/chaordic?lang=da");
+	});
+
 });
 
 function deleteURL() {
 	$("#inputLink").val("");
 	$('#shorten').text("ENCURTAR");
 	$('#delete').html("");
+	$("#inputLink").css("color", "#FD6E12");
 }
 
 function copyLink() {
@@ -46,16 +60,16 @@ function shortenLink() {
 }
 
 function sortURL() {
-    urls = urls.sort(function(a, b) {
-    	return (b["hits"] > a["hits"]) ? 1 : ((b["hits"] < a["hits"]) ? -1 : 0);
-    });
+	urls = urls.sort(function(a, b) {
+		return (b["hits"] > a["hits"]) ? 1 : ((b["hits"] < a["hits"]) ? -1 : 0);
+	});
 }
 
 function selectTop5() {
 	var top5 = "";
 	for (var i = 0; i < 5; i++) {
-		top5 += "<label class='top5url'>" + urls[i].shortUrl + "</label>";
-		top5 += "<label class='top5hits'>" + urls[i].hits.toLocaleString('pt-BR') + "</label><hr>";
+		top5 += "<tr class='top5Tr'><td class='top5UrlsTab'><a class='top5Urls' href='" + urls[i].shortUrl + "' target='blank'>" + urls[i].shortUrl + "</a></td>";
+		top5 += "<td class='top5HitsTab'>" + urls[i].hits.toLocaleString('pt-BR') + "</td></tr>";
 	}
 	return top5;
 }
@@ -75,6 +89,6 @@ function sumTotalHits() {
 }
 
 function setTotalHits() {
-	var totalHits =sumTotalHits();
+	var totalHits = sumTotalHits();
 	$("#totalHits").text(totalHits.toLocaleString('pt-BR'));
 }

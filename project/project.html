@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8";
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 		<link rel="stylesheet" href="project.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="../Assets/urls.json"></script>
 		<script type="text/javascript" src="project.js"></script>
-		<title></title>
+		<title>Encurtador de links</title>
 	</head>
 	<body>
 		<header>
@@ -23,21 +22,22 @@
 			<button id="shorten">ENCURTAR</button>
 		</div>
 		<div id="top5Area">
-			<h2 class="areaTitle">Top 5</h2>
-			<div id="top5"></div>
+			<h2 class="areaTitle">TOP 5</h2>
+			<table id="top5">
+			</table>
 		</div>
 		<div id="hitsArea">
 			<h2 class="areaTitle">HITS</h2>
 			<p id="totalHits"></p>
-			<label id="textHits">Cliques em links</label>
+			<p id="textHits">Cliques em links</p>
 		</div>
-		<footer class="row">
+		<footer>
 			<div id="chrdc">
-				<label class="footerContent">chr.dc</label>
+				<label>chr.dc</label>
 			</div>
 			<div id="socialMedia">
-				<img class="footerContent" src="../Assets/icon-facebook.png">
-				<img class="footerContent" src="../Assets/icon-twitter.png">
+				<img id="twitter" src="../Assets/icon-twitter.png">
+				<img id="facebook" src="../Assets/icon-facebook.png">
 			</div>
 		</footer>
 	</body>
