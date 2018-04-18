@@ -1,0 +1,22 @@
+{
+  "name": "frontend-intern-challenge",
+  "version": "1.0.0",
+  "description": "The challenge is to develop a functional landing page to shorten links from a mockup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faelinacio/frontend-intern-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faelinacio/frontend-intern-challenge/issues"
+  },
+  "homepage": "https://github.com/faelinacio/frontend-intern-challenge#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
