@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NewsletterComponent } from './newsletter.component';
+import {NewsletterComponent} from './newsletter.component';
+import {HttpClientModule} from '@angular/common/http';
 
 describe('NewsletterComponent', () => {
   let component: NewsletterComponent;
@@ -8,7 +9,10 @@ describe('NewsletterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewsletterComponent ]
+      declarations: [ NewsletterComponent ],
+      imports: [
+        HttpClientModule
+      ]
     })
     .compileComponents();
   }));
