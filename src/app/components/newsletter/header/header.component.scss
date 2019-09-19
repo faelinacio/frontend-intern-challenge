@@ -1,41 +1,40 @@
 header {
-  width: 100%;
-  min-height: 319px;
   background: #707070 0 0 no-repeat padding-box;
   border: 1px solid #707070;
-  opacity: 1;
+  min-height: 319px;
   padding-bottom: 49px;
+  opacity: 1;
+  width: 100%;
 }
 
-label {
+h1 {
   color: #FFF;
 }
 
 button,
 button:focus {
-  margin-top: 50px;
-  width: 160px;
-  height: 40px;
   background: #FFFFFF 0 0 no-repeat padding-box;
-  box-shadow: 0 1px 6px #00000029;
   border: 1px solid #707070;
-  color: #888888;
   border-radius: 4px;
-  opacity: 1;
+  box-shadow: 0 1px 6px #00000029;
+  color: #888888;
   font-size: 14px;
-  margin-right: 20px;
-  margin-left: 20px;
+  height: 40px;
+  margin: 50px 20px 0 20px;
+  opacity: 1;
+  width: 160px;
   span {
-    width: 92px;
     height: 16px;
+    width: 92px;
   }
 }
 
-.button-group {
-  display: inline;
+.buttonGroup {
+  display: inline-block;
 }
+
 @media (max-width: 800px)  {
-  .button-group {
+  .buttonGroup {
     display: block;
   }
 }
@@ -43,21 +42,21 @@ button:focus {
 #line1 {
   display: block;
   font-size: 20px;
-  min-height: 23px;
   margin: 62px 20px 0 20px;
+  min-height: 23px;
 }
 
 #line2 {
   display: block;
   font-size: 40px;
   font-weight: bold;
+  margin: 0 20px 0 20px;
   min-height: 48px;
-  margin: 0px 20px 0 20px;
 }
 
 #line3 {
   display: block;
   font-size: 14px;
-  min-height: 16px;
   margin: 24px 20px 0 20px;
+  min-height: 16px;
 }
