@@ -6,11 +6,11 @@
     <form [formGroup]="form" (ngSubmit)="share()">
       <div class="field">
         <label class="d-block">Nome do seu amigo:</label>
-        <input class="d-block" type="text" required formControlName="friendsName"/>
+        <input class="d-block" type="text" maxlength="255" required formControlName="friendsName"/>
       </div>
       <div class="field">
-        <label class="d-block">Nome do seu amigo:</label>
-        <input class="d-block" type="email" required formControlName="email"/>
+        <label class="d-block">E-mail:</label>
+        <input class="d-block" type="email" maxlength="255" required formControlName="email"/>
       </div>
       <div>
         <button [disabled]="form.invalid" id="sendButton">Enviar agora</button>
