@@ -1,16 +1,3 @@
-header {
-  background: #707070 0 0 no-repeat padding-box;
-  border: 1px solid #707070;
-  min-height: 319px;
-  padding-bottom: 49px;
-  opacity: 1;
-  width: 100%;
-}
-
-h1 {
-  color: #FFF;
-}
-
 button,
 button:focus {
   background: #FFFFFF 0 0 no-repeat padding-box;
@@ -27,6 +14,19 @@ button:focus {
     height: 16px;
     width: 92px;
   }
+}
+
+h1 {
+  color: #FFF;
+}
+
+header {
+  background: #707070 0 0 no-repeat padding-box;
+  border: 1px solid #707070;
+  min-height: 319px;
+  padding-bottom: 49px;
+  opacity: 1;
+  width: 100%;
 }
 
 .buttonGroup {
@@ -50,7 +50,7 @@ button:focus {
   display: block;
   font-size: 40px;
   font-weight: bold;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   min-height: 48px;
 }
 
