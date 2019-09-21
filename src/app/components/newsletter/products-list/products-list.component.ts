@@ -5,6 +5,7 @@ import {ProductService} from '../../../services/product.service';
 import {take} from 'rxjs/operators';
 import {ApiResponse} from '../../../models/apiResponse.model';
 import {HttpResponse} from '@angular/common/http';
+import {NgxSpinnerService} from 'ngx-spinner';
 
 @Component({
   selector: 'app-products-list',
@@ -19,6 +20,7 @@ export class ProductsListComponent implements OnInit {
 
   constructor(
     private formBuider: FormBuilder,
+    private spinner: NgxSpinnerService,
     private productService: ProductService
   ) {
     this.page = 1;
@@ -31,10 +33,15 @@ export class ProductsListComponent implements OnInit {
   }
 
   private listProducts(): void {
+    this.spinner.show();
     this.productService.listProducts(this.page)
       .pipe(take(1))
       .subscribe((apiResponse: HttpResponse<ApiResponse>) => {
         this.products.push(...apiResponse.body.products);
+        this.spinner.hide();
+      }, (err) => {
+        console.error(err);
+        this.spinner.hide();
       });
   }
 

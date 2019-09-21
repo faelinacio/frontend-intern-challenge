@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/newsletter/header/header.component
 import { FooterComponent } from './components/newsletter/footer/footer.component';
 import { ProductsListComponent } from './components/newsletter/products-list/products-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
