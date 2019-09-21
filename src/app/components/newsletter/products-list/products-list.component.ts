@@ -6,6 +6,7 @@ import {take} from 'rxjs/operators';
 import {ApiResponse} from '../../../models/apiResponse.model';
 import {HttpResponse} from '@angular/common/http';
 import {NgxSpinnerService} from 'ngx-spinner';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-products-list',
@@ -21,6 +22,7 @@ export class ProductsListComponent implements OnInit {
   constructor(
     private formBuider: FormBuilder,
     private spinner: NgxSpinnerService,
+    private toastr: ToastrService,
     private productService: ProductService
   ) {
     this.page = 1;
@@ -41,6 +43,7 @@ export class ProductsListComponent implements OnInit {
         this.spinner.hide();
       }, (err) => {
         console.error(err);
+        this.toastr.error('An error occurred during searching for your products');
         this.spinner.hide();
       });
   }

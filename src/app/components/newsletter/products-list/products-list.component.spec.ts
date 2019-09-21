@@ -4,6 +4,7 @@ import { ProductsListComponent } from './products-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
+import {ToastrModule} from 'ngx-toastr';
 
 describe('ProductsListComponent', () => {
   let component: ProductsListComponent;
@@ -14,7 +15,8 @@ describe('ProductsListComponent', () => {
       declarations: [ ProductsListComponent ],
       imports: [
         ReactiveFormsModule,
-        HttpClientTestingModule
+        HttpClientTestingModule,
+        ToastrModule.forRoot()
       ]
     })
     .compileComponents();

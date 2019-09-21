@@ -6,6 +6,8 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {ProductsListComponent} from './products-list/products-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
+import {ToastrModule} from 'ngx-toastr';
 
 describe('NewsletterComponent', () => {
   let component: NewsletterComponent;
@@ -21,7 +23,8 @@ describe('NewsletterComponent', () => {
       ],
       imports: [
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        ToastrModule.forRoot()
       ]
     })
     .compileComponents();
