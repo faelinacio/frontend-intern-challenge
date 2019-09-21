@@ -1,6 +1,6 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {NewsletterComponent} from './newsletter.component';
+import {ProductsPageComponent} from './productsPage.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
@@ -9,14 +9,14 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {ToastrModule} from 'ngx-toastr';
 
-describe('NewsletterComponent', () => {
-  let component: NewsletterComponent;
-  let fixture: ComponentFixture<NewsletterComponent>;
+describe('ProductsPageComponent', () => {
+  let component: ProductsPageComponent;
+  let fixture: ComponentFixture<ProductsPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        NewsletterComponent,
+        ProductsPageComponent,
         HeaderComponent,
         FooterComponent,
         ProductsListComponent
@@ -31,7 +31,7 @@ describe('NewsletterComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewsletterComponent);
+    fixture = TestBed.createComponent(ProductsPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
