@@ -1,13 +1,18 @@
 {
-  "name": "productsPage",
+  "name": "products_page",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "postinstall": "ng build --aot --prod",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +25,7 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "ngx-spinner": "^8.0.3",
     "ngx-toastr": "^10.2.0",
     "rxjs": "~6.4.0",
